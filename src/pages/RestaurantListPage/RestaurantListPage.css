@@ -1,0 +1,9 @@
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 40px;
+    justify-items: center;
+    align-items: center;
+    padding: 70px;
+    background-color: #F2F2F2;
+}

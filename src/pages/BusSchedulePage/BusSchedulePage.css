@@ -1,0 +1,167 @@
+.bus-container {
+    padding: 70px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+}
+.white-box-2 {
+    background-color: white;
+    padding: 10px;
+    width: 5000px; 
+    height: 400%;
+    border-radius: 50px;
+    top: 20px;
+    position: relative;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    align-self: center;
+    text-align: center;
+    overflow: auto; /* 표 내용에만 스크롤 적용 */
+    width: 600px;
+}
+
+.schedule table {
+    border-collapse: collapse; /* 테두리가 겹치지 않도록 설정 */
+    width: 100%; /* 표를 가로로 꽉 채우도록 설정 */
+}
+
+.schedule th, .schedule td {
+    border: 1px solid grey; /* 행과 열에 테두리 추가 */
+    padding: 8px; /* 셀 안의 내용과 테두리 사이의 간격 설정 */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 60px;
+}
+
+.radio-inputs {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 14px;
+    margin-left: auto; 
+    right: 0;
+    top: 150px;
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+  }
+
+
+  .button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: grey;
+    background-color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 70px;
+    top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #0c66ed;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+
+  .button.clicked {
+    color: white;
+    background-color: #0c66ed;
+  }
+
+  .button span:not(:nth-child(6))::after {
+    content: ''; /* 가상 요소를 사용하여 텍스트를 추가합니다. */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* 텍스트 색상을 흰색으로 설정합니다. */
+  }
+  
+  .button span:nth-child(6) {
+    position: relative;
+  }
+  
+  .button span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  .button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  .button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  .button span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  .button span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  .button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+    
