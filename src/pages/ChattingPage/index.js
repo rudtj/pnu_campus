@@ -11,7 +11,7 @@ function ChattingPage() {
         <div className="chatting-container">
             <div className="group">
                 <div className="icon-box">
-                    <a href=" " target="_blank">
+                    <a href="https://open.kakao.com/o/ggWawV8" target="_blank">
                         <Icon id="taxi-icon" />
                     </a>
                 </div>
@@ -19,7 +19,7 @@ function ChattingPage() {
             </div>
             <div className="group">
                 <div className="icon-box">
-                    <a href=" " target="_blank">
+                    <a href="https://open.kakao.com/o/gTMdSFnb" target="_blank">
                         <Icon id="delivery-icon" />
                     </a>
                 </div>
@@ -27,7 +27,7 @@ function ChattingPage() {
             </div>
             <div className="group">
                 <div className="icon-box">
-                    <a href=" " target="_blank">
+                    <a href="https://open.kakao.com/o/g9oXGhKb" target="_blank">
                         <Icon id="karaoke-icon" />
                     </a>
                 </div>
@@ -35,11 +35,11 @@ function ChattingPage() {
             </div>
             <div className="group">
                 <div className="icon-box">
-                    <a href=" " target="_blank">
+                    <a href="https://space.pusan.ac.kr/#/dashboard" target="_blank">
                         <Icon id="hanwoolim-icon" />
                     </a>
                 </div>
-                <div className="logo-text">한울림</div>
+                <div className="logo-text">창업 라운지</div>
             </div>
         </div>
         <Footer page='chatting' />

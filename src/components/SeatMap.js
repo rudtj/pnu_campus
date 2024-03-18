@@ -8,22 +8,22 @@ function SeatMap({onSeatClick}) {
   const navigate = useNavigate();
 
   const seatsData = [
-    {id:1, top:18, left:3.3},
-    {id:2, top:18, left:8.8},
-    {id:3, top:29, left:3.3},
-    {id:4, top:29, left:8.8},
-    {id:5, top:38, left:3.3},
-    {id:6, top:38, left:8.8},
-    {id:7, top:49, left:3.3},
-    {id:8, top:49, left:8.8},
-    {id:9, top:58, left:3.3},
-    {id:10, top:58, left:8.5},
-    {id:11, top:70, left:2.9},
-    {id:12, top:70, left:8.5},
-    {id:13, top:79, left:2.9},
-    {id:14, top:79, left:8.5},
-    {id:15, top:90, left:2.9},
-    {id:16, top:90, left:8.5},
+    {id:1, top:18, left:2.5},
+    {id:2, top:18, left:8.2},
+    {id:3, top:29, left:2.5},
+    {id:4, top:29, left:8.2},
+    {id:5, top:38, left:2.5},
+    {id:6, top:38, left:8.2},
+    {id:7, top:49, left:2.5},
+    {id:8, top:49, left:8.2},
+    {id:9, top:58, left:2.5},
+    {id:10, top:58, left:8.2},
+    {id:11, top:70, left:2.5},
+    {id:12, top:70, left:8.2},
+    {id:13, top:79, left:2.5},
+    {id:14, top:79, left:8.2},
+    {id:15, top:90, left:2.5},
+    {id:16, top:90, left:8.2},
     {id:17, top:28, left:29},
     {id:18, top:37, left:27},
     {id:19, top:46, left:29},
@@ -76,7 +76,7 @@ function SeatMap({onSeatClick}) {
   }, [seatsData]);
 
   const handleSeatClick = (clickedSeatId) => {
-    // 클릭된 좌석의 availability를 변경합니다.
+    // 클릭된 좌석의 availability를 변경
     const updatedSeats = seats.map(seat => {
       if (seat.id === clickedSeatId) {
         return {...seat, availability: '사용중'};
@@ -84,7 +84,7 @@ function SeatMap({onSeatClick}) {
       return seat;
     });
     setSeats(updatedSeats);
-    // 부모 컴포넌트로 클릭된 좌석의 ID를 전달합니다.
+    // 부모 컴포넌트로 클릭된 좌석의 ID를 전달
     onSeatClick(clickedSeatId);
   };
 

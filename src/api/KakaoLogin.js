@@ -18,7 +18,7 @@ const KakaoLogin = () => {
             localStorage.setItem('userData', JSON.stringify(data));
 
             // 토큰 관리
-            const idToken = data.access_token;
+            const idToken = data.id_token;
 
             // 토큰이 존재할 경우에만 로컬 스토리지에 저장
             if (idToken) {
@@ -34,11 +34,18 @@ const KakaoLogin = () => {
         }
     }
     return(
-        <button id="kakao-login-btn" onClick={handleLogin}>
+        <button 
+            id="kakao-login-btn" 
+            onClick={handleLogin} 
+            style={{
+                background: 'transparent',
+                border: 'none',
+                padding: 0
+            }}>
             <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222" alt="카카오 로그인 버튼" />
         </button>
     );
-};
+}
 
 export default KakaoLogin;
 

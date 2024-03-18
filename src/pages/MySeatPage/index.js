@@ -1,21 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ReservationModal from '../../components/ReservationModal/ReservationModal';
 import { useReservation } from '../../components/contexts/ReservationProvider';
 import { useTime } from '../../components/contexts/TimeProvider';
 import './MySeatPage.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 function MySeatPage() {
-  const { seatNumber } = useParams();
-  const { isReserved, handleConfirm, handleCancel } = useReservation();
+  const location = useLocation();
+  const { seatNumber } = location.state || {}; // 상태가 없는 경우를 대비하여 기본값 설정
+  const { handleConfirm, handleCancel } = useReservation();
   const { time } = useTime();
   const [showReservation, setShowReservation] = useState(false);
+  const navigate = useNavigate();
 
   const handleConfirmReservation = () => {
     handleConfirm();
     setShowReservation(true);
+  };
+
+  const handleExit = () => {
+    navigate('/');
   };
 
   return (
@@ -47,7 +55,7 @@ function MySeatPage() {
             <span style={{
               color: 'rgba(255, 255,255, 0.9)',
               fontSize: '40px',
-              marginBottom: '10px',
+              marginBottom: '5px',
               marginRight: '10px',
             }}>&lt;</span>
             <span style={{
@@ -95,17 +103,43 @@ function MySeatPage() {
             marginBottom: '50px',
           }}>
             {showReservation ? (
-              <button
-                onClick={handleConfirmReservation}
-                style={{
-                  backgroundColor: '#2559A5',
-                  color: 'white',
-                  border: '1px solid white',
-                  borderRadius: '10px',
-                  padding: '10px 20px',
-                  cursor: 'pointer',
+              <Swiper
+                spaceBetween={50}
+                slidesPerView={1}
+                pagination={{
+                  clickable: true,
+                  renderBullet: (index, className) => {
+                    return `<span class="${className}">${index + 1}</span>`;
+                  },
                 }}
-              >연장</button>
+              >
+                <SwiperSlide>
+                  <button
+                    onClick={handleConfirmReservation}
+                    style={{
+                      backgroundColor: '#2559A5',
+                      color: 'white',
+                      border: '1px solid white',
+                      borderRadius: '10px',
+                      padding: '10px 20px',
+                      cursor: 'pointer',
+                    }}
+                >연장</button>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <button
+                    onClick={handleExit} 
+                    style={{
+                      backgroundColor: '#2559A5',
+                      color: 'white',
+                      border: '1px solid white',
+                      borderRadius: '10px',
+                      padding: '10px 20px',
+                      cursor: 'pointer',
+                    }}
+                  >퇴실</button>
+                </SwiperSlide>
+              </Swiper>
             ) : (
               <h1 style={{ 
                 color: 'rgba(255, 255,255, 0.9)', 

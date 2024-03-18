@@ -12,7 +12,7 @@ html, body, #root, #root > div {
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
-    height: 70.6vh;
+    min-height: 71.4vh;
 }
   
 .link-text {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import KakaoLogin from '../KakaoLogin';
+import KakaoLogin from '../api/KakaoLogin';
 
 const BannerContainer = styled.div`
   display: flex;
@@ -42,11 +42,6 @@ const Campus = styled.div`
   margin-top: 10px;
   font-size: 22px;
   color: #ffffff;
-`;
-
-const LoginContainer = styled.img`
-  display: flex;
-  align-items: center;
 `;
 
 const Banner = () => (

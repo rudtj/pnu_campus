@@ -8,23 +8,8 @@ function RestaurantListPage() {
   return (
     <div>
       <Banner />
-      <div className="main-container">
-        <a href=" " target="_blank">
-          <Icon id="taxi-icon" />
-          <div className="logo-text">택시</div>
-        </a>
-        <a href=" " target="_blank">
-          <Icon id="delivery-icon" />
-          <div className="logo-text">배달</div>
-        </a>
-        <a href=" " target="_blank">
-          <Icon id="karaoke-icon" />
-          <div className="logo-text">노래방</div>
-        </a>
-        <a href=" " target="_blank">
-          <Icon id="hanwoolim-icon" />
-          <div className="logo-text">한울림</div>
-        </a>
+      <div className="main-container-2">
+        <p>헤헤 아직 못 만들었어용</p>
       </div>
       <Footer page='restaurant' />
     </div>

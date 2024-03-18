@@ -1,13 +1,15 @@
 import React, { useState }from 'react';
+import reserveSeat from '../../api/ReservationService';
 
-function ReservationModal({ seatNumber, onConfirm, onCancel }) {
+function ReservationModal({ seatNumber, time, onConfirm, onCancel }) {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [isCanceled, setIsCanceled] = useState(false);
   const [isHoveredYes, setIsHoveredYes] = useState(false);
   const [isHoveredNo, setIsHoveredNo] = useState(false);
   
 
-  const handleYes = () => {
+  const handleYes = async () => {
+    await reserveSeat(seatNumber, time);
     onConfirm();
     setIsConfirmed(true);
   };
@@ -15,7 +17,7 @@ function ReservationModal({ seatNumber, onConfirm, onCancel }) {
   const handleNo = () => {
     onCancel();
     setIsCanceled(true);
-  }
+  };
 
   return (
     <div style={{

@@ -25,7 +25,7 @@ function LibraryReservationPage() {
   const handleConfirm = () => {
     setTimeInfo();
     setIsReserved();
-    navigate('/myseat');
+    navigate('/myseat', { state: { seatNumber } });
   };
 
   const handleCancel = () => {
