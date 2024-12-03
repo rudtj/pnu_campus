@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Campus Connect
+부산대학교 밀양 캠퍼스 학생 편의 웹 사이트 프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🙋‍♀️ 프로젝트 소개
 
-## Available Scripts
+ 부산대학교 밀양 캠퍼스 학생들을 위해 다양한 정보를 한 곳에 모아 제공하는 **플랫폼 서비스** 입니다.😊
+<br>
 
-In the project directory, you can run:
+### 개발 기간
+2024.2.14 ~ 2024.4.01
+<br>
 
-### `npm start`
+## 🔅 서비스 소개
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**✏️ 통합된 오픈채팅방**   
+   - 생명자원과학대학의 분산된 오픈 채팅방을 **한 곳에서** 관리하고 볼 수 있어요!
+     
+     <img width="400" alt="KakaoTalk_20240526_172845840_01" src="https://github.com/ki-met-hoon/Pnu-Univ-Miryang-Campus/assets/101192772/26abd271-e292-48b2-874d-fa26ae2de732">
+     
+**📜 버스 시간표 조회**
+   - 교내 및 교외 **버스 시간표 정보** 제공
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+     <img width="400" alt="KakaoTalk_20240526_172845840_02" src="https://github.com/ki-met-hoon/Pnu-Univ-Miryang-Campus/assets/101192772/81b5b32a-cabe-4148-8277-9d100ae58ec6">
+     
+**💻  생명자원과학대학 도서관 좌석 예약**
+   - 시험 기간에 도서관 좌석때문에 스트레스 받으셨죠?
+   - 새롭게 리뉴얼된 생명자원과학대학 도서관 좌석을 쉽고 간편하게 **예약**할 수 있습니다!
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+     <img width="400" alt="image" src="https://github.com/ki-met-hoon/Pnu-Univ-Miryang-Campus/assets/101192772/a99b5312-f50c-4a2c-87eb-980a5410c55b">
+<br>
